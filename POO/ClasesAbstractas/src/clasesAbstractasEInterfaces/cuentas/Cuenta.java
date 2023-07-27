@@ -1,8 +1,8 @@
-package clasesAbstractas.cuentas;
+package clasesAbstractasEInterfaces.cuentas;
 
-import clasesAbstractas.Cliente;
+import clasesAbstractasEInterfaces.Cliente;
 
-public abstract class Cuenta {
+public abstract class Cuenta implements Comparable<Cuenta>{
 
     private Cliente cliente;
     private Double saldo;
@@ -35,4 +35,16 @@ public abstract class Cuenta {
     protected void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
+
+    @Override
+    public int compareTo(Cuenta otraCuenta){
+        if(this.saldo > otraCuenta.saldo){
+            return 1;
+        }else if(this.saldo < otraCuenta.saldo){
+            return -1;
+        }else{
+            return 0;
+        }
+    }
+
 }

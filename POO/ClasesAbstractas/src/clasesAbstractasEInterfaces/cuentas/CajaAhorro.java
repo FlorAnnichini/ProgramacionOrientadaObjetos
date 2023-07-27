@@ -1,6 +1,6 @@
-package clasesAbstractas.cuentas;
+package clasesAbstractasEInterfaces.cuentas;
 
-import clasesAbstractas.Cliente;
+import clasesAbstractasEInterfaces.Cliente;
 
 public class CajaAhorro extends Cuenta {
 

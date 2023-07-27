@@ -1,4 +1,4 @@
-package clasesAbstractas;
+package clasesAbstractasEInterfaces;
 
 public class Cliente {
 
@@ -12,5 +12,8 @@ public class Cliente {
         this.apellido = apellido;
         this.dni = dni;
         this.cuil = cuil;
+    }
+
+    public Cliente() {
     }
 }
